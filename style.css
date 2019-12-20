@@ -1,0 +1,333 @@
+body{
+    background: white;
+    padding: 0;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/***header***/
+header{
+    width: 100%;
+    background: darkgreen;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fcc-logo {
+    color: whitesmoke;
+    padding: 0;
+    font-size: 18px;
+    margin: 0 480px 0 20px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fcc-logo img{
+    width: 30px;
+    height: 25px;
+}
+
+/***nav***/
+
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li:hover{
+    background-color: lightgray;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+    padding: 6px 10px;
+    font-size: 17px;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+/***TOGGLE***/
+#label, #toggle{
+    display: none;
+}
+
+/***MAIN CONTENT***/
+.sections{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.welcome{
+    font-family: tahoma;
+    font-size: 52px;
+    margin: 30px 0 40px 0;
+}
+
+.support-future{
+    font-size: 35px;
+}
+
+.progress-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+}
+
+.progress-bar1{
+    background-color:darkgreen;
+    width: 23%;
+    height: 40px;
+    border: 2px solid darkgreen;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.progress-bar2{
+    width: 23%;
+    height: 40px;
+    background-color: whitesmoke;
+    border: 1px solid lightgrey;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.supporters p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.slogan p{
+    font-weight: 600;
+    font-family: tahoma;
+    margin-bottom: 50px;
+}
+
+.support-button1{
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    color: darkgreen;
+    background: white;
+    margin: 0 auto;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.support-button1:hover{
+    background-color: darkgreen;
+    transition: 0.5s;
+    color: white;
+}
+
+.join-community{
+    margin: 50px 0 50px 0;
+}
+
+.join-community p{
+    font-weight: 600;
+    font-family: tahoma;
+}
+
+.quote p{
+    font-size: 35px;
+    font-weight:200;
+    font-family: tahoma;
+    margin-bottom: 20px;
+}
+
+.quote-author{
+    font-size: 35px;
+    color: gray;
+    margin-bottom: 60px;
+}
+
+.completed-challenge p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: tahoma;
+}
+
+.challenge-numbers{
+    color: darkgreen;
+    text-decoration: none;
+}
+
+.coding-button {
+    border: 1px solid darkgreen;
+    width: 30%;
+    text-align: center;
+    padding: 14px 12px;
+    border-radius: 5px;
+    color: darkgreen;
+    font-size: 50px;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.codingbtn-link{
+    text-decoration: none;
+}
+
+.coding-button:hover{
+    background-color: darkgreen;
+    transition: 0.5s;
+    color: white;
+}
+
+
+@media only screen and (max-width: 768px){
+    header{
+        padding: 5px 10px 5px 0;
+    }
+    
+    .fcc-logo{
+        margin-right: 0;  
+    }
+
+    /****Menu****/
+    nav ul{
+        display: none;
+        width:100%;
+        text-align: center;
+        background:green;
+        border-top: 1px solid green;
+        border-bottom: 1px solid green;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li:hover{
+        background-color: white;
+    }
+
+    nav ul li a{
+        display: block;
+        color: white;
+    }
+
+    nav ul li a:hover{
+        color: #000000;
+        text-decoration: none;
+    }
+
+    #label {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+    }
+
+    #toggle:checked + #menu{
+        display: block;
+        position:absolute;
+        right:0;
+    }
+    
+    /***sections***/
+    .welcome{
+        font-size: 40px;
+        margin: 30px 0 30px 0;
+    }
+    
+    .support-future{
+        font-size: 30px;
+    }
+
+    .join-community{
+        margin-bottom: 25px;
+    }
+    
+    .quote p{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .quote-author{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .completed-challenge p{
+        font-size: 18px;
+    }
+    
+    .coding-button {
+        width: 55%;
+        font-size: 35px;
+        margin-top: 40px;
+    }   
+}
+
+@media only screen and (max-width: 375px){
+    .welcome{
+        font-size: 25px;
+    }
+    
+    .support-future{
+        font-size: 20px;
+    }
+
+    .support-button1{
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    .join-community, .slogan{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .join-community p, .slogan p{
+        font-size: 16px;
+    }
+    
+    .quote p{
+        font-size: 20px;
+    }
+    
+    .quote-author{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .completed-challenge p{
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .coding-button {
+        width: 70%;
+        padding: 14px 12px;
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }   
+}
